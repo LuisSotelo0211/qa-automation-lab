@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <meta charset="utf-8" /><title>Formulario en iframe</title
+  ><style>
+    body {
+      font: 16px system-ui;
+      padding: 12px;
+      color: #182238;
+    }
+    input,
+    button {
+      font: inherit;
+      padding: 8px;
+      margin: 8px 0;
+    }
+    label {
+      display: block;
+    }
+  </style>
+  <form id="f">
+    <label>Referencia<input name="reference" required /></label
+    ><button>Validar referencia</button>
+    <p role="status" id="result"></p>
+  </form>
+  <script>
+    document.querySelector("#f").onsubmit = (e) => {
+      e.preventDefault();
+      document.querySelector("#result").textContent =
+        "Referencia recibida: " + new FormData(e.target).get("reference");
+    };
+  </script>
+</html>

@@ -1,0 +1,8 @@
+services:
+  qa-lab:
+    build: .
+    ports: ["3000:3000"]
+    environment: ["PORT=3000", "HOST=0.0.0.0", "LAB_DB=/app/data/lab.sqlite"]
+    volumes: ["qa_lab_data:/app/data"]
+volumes:
+  qa_lab_data:

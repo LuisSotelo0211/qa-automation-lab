@@ -136,4 +136,3 @@ Para una instalación expuesta a Internet se requiere adaptar el modelo de cuent
 ## Autor
 
 [Luis Sotelo](https://github.com/LuisSotelo0211)
-

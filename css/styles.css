@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 :root {
-  font-family: "DM Sans", system-ui, sans-serif;
+  font-family: system-ui, system-ui, sans-serif;
   color: #17213a;
   background: #f7f9fc;
   font-synthesis: none;
@@ -85,7 +84,7 @@ button:disabled {
   text-decoration: none;
   color: #17213a;
   font:
-    700 1.27rem "Space Grotesk",
+    700 1.27rem system-ui,
     sans-serif;
 }
 .brand-icon {
@@ -104,7 +103,7 @@ button:disabled {
 .workspace-label small,
 .user-label small {
   display: block;
-  font: 500 0.62rem "DM Sans";
+  font: 500 0.62rem system-ui;
   letter-spacing: 0.08em;
   color: #8c96a9;
   margin-top: 2px;
@@ -259,7 +258,7 @@ button:disabled {
 }
 .page-heading h1 {
   font:
-    700 clamp(1.6rem, 3vw, 2.55rem) / 1.12 "Space Grotesk",
+    700 clamp(1.6rem, 3vw, 2.55rem) / 1.12 system-ui,
     sans-serif;
   letter-spacing: -0.045em;
   margin: 0;
@@ -286,7 +285,7 @@ button:disabled {
   position: relative;
 }
 .shop-banner h2 {
-  font: 700 2rem/1.05 "Space Grotesk";
+  font: 700 2rem/1.05 system-ui;
   margin: 14px 0;
 }
 .shop-banner p {
@@ -357,11 +356,11 @@ button:disabled {
   gap: 10px;
 }
 .catalog-header h2 {
-  font: 700 1.35rem "Space Grotesk";
+  font: 700 1.35rem system-ui;
   margin: 0;
 }
 .count {
-  font: 500 0.8rem "DM Sans";
+  font: 500 0.8rem system-ui;
   background: #e8ecf3;
   border-radius: 20px;
   padding: 3px 8px;
@@ -489,7 +488,7 @@ button:disabled {
   margin-top: 13px;
 }
 .product-bottom strong {
-  font: 700 1.05rem "Space Grotesk";
+  font: 700 1.05rem system-ui;
 }
 .add-button {
   padding: 6px 8px;
@@ -565,7 +564,7 @@ button:disabled {
 }
 .stats strong {
   display: block;
-  font: 700 1.4rem "Space Grotesk";
+  font: 700 1.4rem system-ui;
   margin-top: 7px;
 }
 .role-stat {
@@ -669,7 +668,7 @@ td {
   border-bottom: 1px solid #edf0f4;
 }
 .modal > header h2 {
-  font: 700 1.1rem "Space Grotesk";
+  font: 700 1.1rem system-ui;
   margin: 0;
 }
 .modal > p,
@@ -819,10 +818,10 @@ td {
   letter-spacing: 0.05em;
 }
 .week-tabs strong {
-  font: 700 1.2rem "Space Grotesk";
+  font: 700 1.2rem system-ui;
 }
 .week-detail h2 {
-  font: 700 1.65rem "Space Grotesk";
+  font: 700 1.65rem system-ui;
   margin: 13px 0 6px;
 }
 .tool-pills {
@@ -1085,3 +1084,6 @@ pre {
 }
 .modal>.form:has(+.auth-switch){padding-bottom:0}
 .modal>.auth-switch{margin:20px auto;padding:0 8px;text-align:center}
+.product-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.product-bottom{flex-wrap:wrap;gap:8px}.product-bottom strong{white-space:nowrap}.add-button{flex-shrink:0}
+.interaction-extras{display:grid;gap:20px;margin-top:24px}.interaction-extras progress{width:100%;height:18px;accent-color:#6545e8}.interaction-extras fieldset{margin:16px 0;border:1px solid #dfe4ec;border-radius:8px}.interaction-extras input,.interaction-extras select{padding:9px;border:1px solid #dfe4ec;border-radius:8px}.dialog-actions{display:flex;justify-content:flex-end;gap:12px;padding:20px}.help-tooltip{position:relative;display:inline-block;margin-top:18px}.help-tooltip [role=tooltip]{display:none;position:absolute;left:0;bottom:calc(100% + 8px);min-width:220px;background:#17213a;color:white;padding:10px;border-radius:8px;font-size:.8rem}.help-tooltip:focus-within [role=tooltip],.help-tooltip:hover [role=tooltip]{display:block}
